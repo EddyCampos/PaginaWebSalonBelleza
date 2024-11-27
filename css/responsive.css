@@ -1,0 +1,820 @@
+/* @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    #tituloSliderFijo {
+        font-size: 105px;
+        padding-top: 8rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 80%;
+    }
+
+    #sliderUno h3,
+    #sliderDos h3,
+    #sliderTres h3,
+    #sliderRepetido h3 {
+        font-size: 40px;
+        padding-top: 18rem;
+    }
+
+    #botnSliderFijo {
+        top: 22rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #info-contacto {
+        height: 400px;
+    }
+} */
+
+
+@media only screen and (min-width: 320px) and (max-width: 1000px) {
+
+    /*BURBUJ WA--------------------------------------------------------------------------------*/
+    #burbujaWA {
+        width: 65px;
+        height: 65px;
+        top: 85%;
+        left: 75%;
+    }
+
+    #burbujaWA i {
+        font-size: 30px;
+    }
+
+    #encabezado {
+        z-index: 11;
+    }
+
+    #encabezado img {
+        width: 210px;
+        height: 68px;
+        margin: .4em 0 0 1em;
+        /* position: fixed; */
+    }
+
+    /*MENU--------------------------------------------------------------------------------*/
+    #menu #menuDesktop {
+        display: none;
+    }
+
+    #menuMovil {
+        background-color: #fff;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        position: fixed;
+        margin-top: 0%;
+        display: block;
+        z-index: 10;
+    }
+
+    #menuMovil .contenedorMenu li {
+        list-style: none;
+    }
+
+    .contenedorMenu {
+        position: relative;
+        height: 84px;
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    #menuMovil div {
+        width: 100%;
+        height: auto 100%;
+    }
+
+    #menuMovil .contenedorMenu div ul {
+        list-style: none;
+    }
+
+    /*ESTILO CHECKBOX*/
+    #menuMovil .contenedorMenu .checkbox {
+        position: fixed;
+        height: 55px;
+        width: 55px;
+        z-index: 13;
+        top: 3%;
+        left: 80%;
+        opacity: 0;
+        background-color: #026843;
+    }
+
+    /*ESTLOS LINEAS*/
+    #menuMovil .contenedorMenu .lineasMenu {
+        display: block;
+        height: 40px;
+        width: 45px;
+        z-index: 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        margin: 1.4em;
+    }
+
+    #menuMovil .lineasMenu .linea {
+        display: block;
+        height: 10px;
+        width: 100%;
+        background-color: #026842;
+        border-radius: 2px;
+        z-index: 12;
+    }
+
+    /*ESTILO MENU QUE ABRE*/
+    #menuMovil .opcionesMenu {
+        position: fixed;
+        top: 0%;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        transform: translate(-200%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+        z-index: 10;
+        padding: 8em 2em;
+        line-height: 2.5em;
+        text-align: left;
+    }
+
+
+    #menuMovil .opcionesMenu ul li a {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #026842;
+        transition-property: all;
+        transition-duration: .5s;
+    }
+
+    /*DEFINEN ANIMACIONES LINEAS*/
+    #menuMovil .lineasMenu .lineaUno {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    #menuMovil .lineasMenu .lineaDos {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    #menuMovil .lineasMenu .lineaTres {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+
+    #menuMovil input[type="checkbox"]:checked~.opcionesMenu {
+        transform: translateX(0%);
+    }
+
+    #menuDesktop .navegacion input[type="checkbox"]:checked~#logo {
+        animation-play-state: paused;
+    }
+
+    #menuMovil input[type="checkbox"]:checked~.lineasMenu {
+        position: fixed;
+        animation-play-state: paused;
+    }
+
+    #menuMovil input[type="checkbox"]:checked {
+        position: fixed;
+    }
+
+    #menuMovil input[type="checkbox"]:checked~.lineasMenu .lineaUno {
+        transform: rotate(45deg);
+        animation-play-state: paused;
+    }
+
+    #menuMovil input[type="checkbox"]:checked~.lineasMenu .lineaDos {
+        transform: scaleY(0);
+        animation-play-state: paused;
+    }
+
+    #menuMovil input[type="checkbox"]:checked~.lineasMenu .lineaTres {
+        transform: rotate(-45deg);
+        animation-play-state: paused;
+    }
+
+
+    /*CAROUSEL--------------------------------------------------------------------------------*/
+    #principal {
+        height: 600px;
+    }
+
+    #sliderUno,
+    #sliderDos,
+    #sliderTres,
+    #sliderRepetido {
+        height: 600px;
+        padding-top: 2rem;
+    }
+
+    #sliderUno>div,
+    #sliderDos>div,
+    #sliderTres>div,
+    #sliderRepetido>div {
+        width: 100%;
+        height: 600px;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.338);
+    }
+
+    #sliderUno .fondo,
+    #sliderDos .fondo,
+    #sliderTres .fondo,
+    #sliderRepetido .fondo {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+
+    #sliderUno h3,
+    #sliderDos h3,
+    #sliderTres h3,
+    #sliderRepetido h3 {
+        color: #fff;
+        font-size: 28px;
+        margin: 0;
+        text-align: center;
+        padding-top: 20rem;
+    }
+
+    #sliderUno>div>div,
+    #sliderDos>div>div,
+    #sliderTres>div>div,
+    #sliderRepetido>div>div {
+        width: 220px;
+        height: 600px;
+        background-color: #026843;
+        border-radius: 95%;
+        /* padding: 1em .5em;
+        margin: 3em auto; */
+        text-align: center;
+    }
+
+    #sliderUno>div>div>a,
+    #sliderDos>div>div>a,
+    #sliderTres>div>div>a,
+    #sliderRepetido>div>div>a {
+        font-size: 22px;
+        margin: 1em auto;
+    }
+
+    #tituloSliderFijo {
+        font-size: 50px;
+        /* padding-top: 12rem; */
+        margin: 0 auto;
+        z-index: 2;
+        width: 100%;
+        font-weight: bolder;
+    }
+
+    #botnSliderFijo {
+        width: 220px;
+        height: 50px;
+        position: absolute;
+        margin: auto;
+        top: 230px;
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #botnSliderFijo a {
+        font-size: 20px;
+    }
+
+    #sliderUno .fondo2 {
+        width: 100%;
+    }
+
+    #sliderUno .fondo {
+        display: none;
+    }
+
+    #sliderDos .fondo2 {
+        width: 100%;
+    }
+
+    #sliderDos .fondo {
+        display: none;
+    }
+
+    #sliderTres .fondo2 {
+        width: 100%;
+    }
+
+    #sliderTres .fondo {
+        display: none;
+    }
+
+    #sliderRepetido .fondo2 {
+        width: 100%;
+    }
+
+    #sliderRepetido .fondo {
+        display: none;
+    }
+
+    /*INFO SALON--------------------------------------------------------------------------------*/
+    #info-salon {
+        display: block;
+    }
+
+    #info-salon .img-uno img {
+        width: 90%;
+    }
+
+    #info-salon .img-dos {
+        width: 90%;
+        top: 25%;
+        left: 50%;
+        display: none;
+    }
+
+    #info-salon>div h2 {
+        font-size: 22px;
+        white-space: pre-wrap;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    #info-salon>div p {
+        font-size: 18px;
+        text-align: center;
+        padding: .5em 1em;
+        width: 100%;
+    }
+
+    #info-salon>div>div {
+        width: 160px;
+        height: 40px;
+        padding: .5em 2.3em;
+        margin: .5em auto 2em auto;
+        white-space: nowrap;
+    }
+
+    #info-salon>div>div>a {
+        text-align: center;
+    }
+
+    /*NUESTRO EQUIPO--------------------------------------------------------------------------------*/
+    #nuestro-equipo h2 {
+        font-size: 35px;
+    }
+
+    #nuestro-equipo div {
+        align-items: center;
+        text-align: center;
+    }
+
+    #nuestro-equipo div img {
+        width: 250px;
+        height: 313px;
+    }
+
+    #nuestro-equipo div h3 {
+        font-size: 20px;
+    }
+
+    #nuestro-equipo div h4 {
+        font-size: 18px;
+    }
+
+    /*CONTACTENOS--------------------------------------------------------------------------------*/
+    #info-contacto h2 {
+        font-size: 25px;
+    }
+
+    #info-contacto p {
+        font-size: 20px;
+        white-space: pre-wrap;
+        width: 60%;
+    }
+
+    #info-contacto div h2 {
+        font-size: 20px;
+        padding-bottom: 1em;
+    }
+
+    #info-contacto a {
+        padding: .5em;
+    }
+
+    /*FOOTER--------------------------------------------------------------------------------*/
+    footer {
+        background-size: 80%;
+        background-position: right bottom;
+        flex-direction: column;
+        align-items: center;
+        height: 390px;
+        padding: 1em;
+        text-align: center;
+    }
+
+    footer p {
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+
+    #menu-footer {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #menu-footer a {
+        font-size: 18px;
+        padding: .2em;
+    }
+
+    #contacto-footer {
+        padding-top: 1em;
+    }
+
+    #contacto-footer>div {
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #contacto-footer p,
+    a,
+    div>a {
+        font-size: 18px;
+        white-space: nowrap;
+        gap: 1em;
+    }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*SERVICIOS-------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------*/
+    #contenedor-servicios>h2 {
+        font-size: 30px;
+        margin-bottom: .5em;
+    }
+
+    #contenedor-servicios article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contenedor-servicios>article>div h2 {
+        font-size: 25px;
+        font-weight: 900;
+        padding-top: 1em;
+    }
+
+    #contenedor-servicios>article div a {
+        color: #fff;
+        font-weight: 700;
+        background-color: #026843;
+        border-radius: 90%;
+        width: 45%;
+        height: 45px;
+        text-align: center;
+    }
+
+    #contenedor-servicios>article>div p {
+        font-size: 22px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #contenedor-servicios .boton {
+        align-items: center;
+    }
+
+    /*----------------*/
+    #maquillaje figure {
+        border-right: none;
+    }
+
+    #maquillaje>div ul {
+        list-style: none;
+        font-size: 22px;
+    }
+
+    /*----------------*/
+    #contenedor-servicios>#bodas {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #bodas figure {
+        border-left: none;
+    }
+
+    /*----------------*/
+    #talleres .img-talleres {
+        border-right: none;
+    }
+
+    #talleres h3 {
+        font-size: 25px;
+    }
+
+    #talleres>div ul {
+        font-size: 22px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #talleres>.text {
+        border-left: none;
+    }
+
+    /*----------------*/
+    #peinados figure {
+        border-left: none;
+    }
+
+    #contenedor-servicios>#peinados {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contenedor-servicios #peinados>div h2 {
+        padding-top: 1em;
+    }
+
+    /*----------------*/
+    #manicura figure {
+        border-right: none;
+    }
+
+    #contenedor-servicios #manicura>div h2 {
+        padding-top: 1em;
+    }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*QUIENES SOMOS-------------------------------------------------------------------------------*/
+    #contenedor-nosotros article h2 {
+        font-size: 30px;
+    }
+
+    #contenedor-nosotros p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    #personal>div {
+        position: relative;
+        height: 750px;
+    }
+
+    #personal .images-personal {
+        /* display: block; */
+        overflow: hidden;
+        width: auto;
+        position: relative;
+    }
+
+
+    #personal p {
+        top: 0;
+        left: 0;
+        position: relative;
+        width: 90%;
+        text-align: center;
+    }
+
+    #personal h3 {
+        position: relative;
+        text-align: center;
+        color: #026842;
+        font-size: 25px;
+        top: 0;
+        left: 0;
+    }
+
+    #personal #montserrat p {
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+
+    #personal #montserrat h3 {
+        left: 0;
+        top: 0;
+        text-align: center;
+    }
+
+    #personal #angie .images-personal,
+    .img02,
+    .img03 {
+        transition-property: none;
+    }
+
+    #angie .img02 {
+        display: none;
+    }
+
+    #angie .img03 {
+        display: none;
+    }
+
+    #montserrat .img01 {
+        display: none;
+    }
+
+    #montserrat .img02 {
+        display: none;
+    }
+
+
+    /*----------------------------------------------------------------------------------------*/
+    /*CONTACTO-------------------------------------------------------------------------------*/
+    #contenedor-formulario h2 {
+        font-size: 30px;
+        padding: .5em 0;
+    }
+
+    .contacto-formulario>div>a,
+    p {
+        font-size: 20px;
+        text-align: center;
+        padding: .2em 0;
+    }
+
+    .contacto-formulario>div+div {
+        display: flex;
+        gap: 1em;
+    }
+
+    .horario {
+        margin: 3em 0;
+    }
+
+    .formulario .filas {
+        text-align: center;
+    }
+
+    .formulario .filas label {
+        width: 90%;
+    }
+
+    .formulario .filas input {
+        width: 90%;
+    }
+
+    .formulario .filas textarea {
+        width: 90%;
+    }
+
+    .formulario .botones {
+        text-align: center;
+    }
+
+    .formulario .botones input {
+        font-size: 16px;
+        color: #fff;
+        background-color: #026842;
+        margin: 1em 0;
+    }
+
+    /*----------------------------------------------------------------------------------------*/
+    /*GALERÍA-------------------------------------------------------------------------------*/
+    #contenedor-galeria h2 {
+        font-size: 30px;
+    }
+
+    #contenedor-galeria figure {
+        width: 90%;
+    }
+
+    #imgActiva {
+        width: 80%;
+        height: auto;
+    }
+
+    #contenedor-galeria figure:hover>img {
+        transform: none;
+    }
+
+    #contenedor-galeria figure img {
+        transition: none;
+    }
+
+}
+
+@media only screen and (min-width: 460px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 83%;
+
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 85%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 87%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 89%;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 90%;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 91%;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    #menuMovil .contenedorMenu .checkbox {
+        top: 3%;
+        left: 93%;
+    }
+}
+
+@media only screen and (min-width: 700px)  and (min-height: 800px) and (orientation: portrait){
+    #botnSliderFijo {
+        top: -60px;
+    }
+
+    #burbujaWA {
+        top: 90%;
+        left: 85%;
+    }
+
+    #personal>div {
+        height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
+@media screen and (min-width:480px) and (min-height: 840px) {
+    #tituloSliderFijo {
+        font-size: 55px;
+        padding-top: 12rem;
+        margin: 0 auto;
+        z-index: 2;
+        width: 100%;
+        font-weight: bolder;
+    }
+
+    #sliderUno h3,
+    #sliderDos h3,
+    #sliderTres h3,
+    #sliderRepetido h3 {
+        color: #fff;
+        font-size: 30px;
+        margin: 0;
+        text-align: center;
+        padding-top: 20rem;
+    }
+} */

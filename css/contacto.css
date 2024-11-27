@@ -1,0 +1,104 @@
+#contacto .oculto{
+    display: none;
+}
+
+#contenedor-formulario {
+    padding: 7em 0 3em 0;   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contenedor-formulario h2{
+    color: #026842;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* margin-bottom: 1em; */
+}
+
+.formulario{
+    margin: 1em auto;
+}
+
+.formulario .filas input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #026842;
+    margin-bottom: 1em;
+    border: 1px solid #026842; 
+    padding: .5em;
+}
+
+.formulario .filas label{
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #026842;
+    width: 100%;  
+}
+
+.formulario .filas textarea{
+    border: 1px solid #026842;
+    color: #026842;
+    padding: .5em;
+    width: 100%;
+}
+.formulario .botones{
+    text-align: center;
+}
+
+.formulario .botones input{
+    background-color:#026842;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    padding: .8em 3em;
+    border-radius: 95%;
+    border: none;
+    margin-top: 1em;
+}
+/*-------------------------------------------*/
+.contacto-formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6em;
+}
+
+.contacto-formulario h2{
+    font-size: 40px;
+
+    width: 100%;
+}
+
+.contacto-formulario > div > a, p{
+    color: #026842;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    display: block;
+}
+
+.contacto-formulario > div+div a{
+    font-size: 50px;
+    color: #026842;
+}
+
+/*-------------------------------------------*/
+.horario{
+    text-align: center;
+    border-top: 1px solid #026842;
+    border-bottom: 1px solid #026842;
+    margin: 3em 0;
+    padding: 2em;
+}
+
+.horario .titulohorario{
+    font-weight: 900;
+    padding-top: .5em;
+}

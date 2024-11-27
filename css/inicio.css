@@ -1,0 +1,383 @@
+/*----------------------------------------------CAROUSEL----------------------------------------------*/
+/* @media (min-width: 1024px) { */
+    section {
+        overflow: hidden;
+    }
+
+    #principal {
+        position: relative;
+        height: 95vh;
+        animation: movSlider 20s infinite ease-in-out;
+    }
+
+    #tituloSliderFijo {
+        position: absolute;
+        white-space: pre-wrap;
+        color: #fff;
+        font-size: 105px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding-top: 8rem;
+        margin: 0 auto;
+        z-index: 2;
+        width: 100%;
+        font-weight: lighter;
+    }
+
+
+    #index .oculto {
+        display: none;
+    }
+
+    #sliderDos {
+        transform: translateX(100%);
+    }
+
+    #sliderTres {
+        transform: translateX(200%);
+    }
+
+    #sliderRepetido {
+        transform: translateX(300%);
+    }
+
+    #sliderUno,
+    #sliderDos,
+    #sliderTres,
+    #sliderRepetido {
+        clear: both;
+        display: flex;
+        position: absolute;
+        width: 100%;
+        padding-top: 6rem;
+        align-items: center;
+    }
+
+    #sliderUno>div,
+    #sliderDos>div,
+    #sliderTres>div,
+    #sliderRepetido>div {
+        width: 50%;
+        height: 95vh;
+        flex: 1;
+    }
+
+    #sliderUno .fondo,
+    #sliderDos .fondo,
+    #sliderTres .fondo,
+    #sliderRepetido .fondo {
+        width: 50%;
+        flex: 1;
+    }
+
+    #sliderUno .fondo {
+        background-image: url(../images/above_the_fold_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderUno .fondo2 {
+        background-image: url(../images/galeria_16.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderDos .fondo {
+        background-image: url(../images/carousel2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderDos .fondo2 {
+        background-image: url(../images/galeria_25.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderTres .fondo {
+        background-image: url(../images/carousel3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderTres .fondo2 {
+        background-image: url(../images/galeria_01.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderRepetido .fondo {
+        background-image: url(../images/above_the_fold_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #sliderRepetido .fondo2 {
+        background-image: url(../images/galeria_16.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+    #sliderUno h2,
+    #sliderDos h2,
+    #sliderTres h2,
+    #sliderRepetido h2 {
+        color: #026842;
+        font-size: 70px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding-top: 13rem;
+    }
+
+    #sliderUno h3,
+    #sliderDos h3,
+    #sliderTres h3,
+    #sliderRepetido h3 {
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        padding-top: 18rem;
+        position: absolute;
+        width: 100%;
+    }
+
+    #sliderUno span,
+    #sliderDos span,
+    #sliderTres span,
+    #sliderRepetido span {
+        font-weight: bolder;
+    }
+
+    #sliderUno img,
+    #sliderDos img,
+    #sliderTres img,
+    #sliderRepetido img {
+        width: 100%;
+    }
+
+    #botnSliderFijo {
+        width: 250px;
+        height: 70px;
+        background-color: #026842;
+        border-radius: 95%;
+        padding-top: 1rem;
+        text-align: center;
+        position: absolute;
+        top: 400px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 2;
+    }
+
+    #botnSliderFijo a {
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    #sliderUno>div>div:hover {
+        border-radius: 5px;
+    }
+
+    @keyframes movSlider {
+        0% {
+            transform: translateX(0);
+        }
+
+        10% {
+            transform: translateX(0%);
+        }
+
+        20% {
+            transform: translateX(-100%);
+        }
+
+        40% {
+            transform: translateX(-100%);
+        }
+
+        60% {
+            transform: translateX(-100%);
+        }
+
+        70% {
+            transform: translateX(-200%);
+        }
+
+        90% {
+            transform: translateX(-200%);
+        }
+
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+
+    /*----------------------------------------------INFO SALON----------------------------------------------*/
+    #info-salon {
+        /* height: 400px; */
+        display: flex;
+        position: relative;
+        column-gap: 6rem;
+        border-bottom: 1px solid #026842;
+        border-top: 1px solid #026842;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #info-salon {
+        background-color: #fff;
+    }
+
+    #info-salon .img-uno {
+        flex: 1;
+        padding: .5em;
+        text-align: center;
+    }
+
+    #info-salon .img-uno img {
+        width: 90%;
+    }
+
+    #info-salon .img-dos {
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 40%;
+    }
+
+    #info-salon .img-dos img {
+        width: 40%;
+    }
+
+    #info-salon div {
+        flex: 1;
+    }
+
+    #info-salon>div h2 {
+        color: #026842;
+        font-size: 32px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    #info-salon>div p {
+        color: #026842;
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        text-align: left;
+        width: 90%;
+        padding-top: 2rem;
+    }
+
+    #info-salon>div>div {
+        width: 190px;
+        height: 60px;
+        background-color: #026842;
+        border-radius: 95%;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    #info-salon>div>div>a {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    /*----------------------------------------------NUESTRO EQUIPO----------------------------------------------*/
+    #nuestro-equipo {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15em;
+        justify-content: center;
+    }
+
+    #nuestro-equipo h2 {
+        width: 100%;
+        height: 90px;
+        color: #026842;
+        font-size: 45px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        padding: .5em;
+        border-bottom: 1px solid #026842;
+    }
+
+    #nuestro-equipo div img {
+        border-radius: 90% 90% 0 0;
+        width: 300px;
+        height: 375px;
+        margin-top: 2em;
+    }
+
+    #nuestro-equipo div h3 {
+        color: #026842;
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #nuestro-equipo div h4 {
+        color: #026842;
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 2em;
+    }
+
+    /*----------------------------------------------CONTÁCTENOS----------------------------------------------*/
+    #info-contacto {
+        height: 500px;
+        border-top: 1px solid #026842;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #026842;
+        text-align: center;
+        padding: 2em;
+    }
+
+    #info-contacto h2 {
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+        padding: .5em 0;
+    }
+
+    #info-contacto p {
+        font-size: 30px;
+        font-family: 'Raleway', sans-serif;
+        padding: .5em 0 .5em 0;
+    }
+
+    #info-contacto a {
+        color: #026842;
+        font-size: 50px;
+        font-family: 'Raleway', sans-serif;
+        padding: .5em;
+    }
+
+    #info-contacto div {
+        padding-top: 1em;
+    }
+/* } */

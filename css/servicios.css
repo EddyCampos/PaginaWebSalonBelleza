@@ -1,0 +1,132 @@
+#contenedor-servicios{
+    padding-top: 7em;
+}
+
+#contenedor-servicios article{
+    border-top: 1px solid #026842;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/*PRINCIPAL*/
+#contenedor-servicios > h2{
+    color: #026842;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#contenedor-servicios > article figure{    
+    height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 4% 2%;
+    width: 100%;
+}
+
+#contenedor-servicios > article figure figcaption{
+    display: none;
+}
+
+#contenedor-servicios > article figure img{
+    width: 80%;
+    height: auto;
+}
+
+#contenedor-servicios > article div{
+    color: #026842;
+    font-family: 'Raleway', sans-serif;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2%;
+}
+
+#contenedor-servicios > article > div h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#contenedor-servicios > article > div p{
+    font-size: 25px;
+    white-space: pre-wrap;
+}
+
+#contenedor-servicios > article div a{
+    color: #fff;
+    font-weight: 700;
+    border: 1px solid #026842;
+    background-color: #026842;
+    border-radius: 90%;
+    width: 300px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-servicios .boton{
+    align-items: start;
+}
+
+/*--------------------*/
+#maquillaje > div ul{
+    list-style: none;
+    font-size: 25px;
+}
+
+#maquillaje figure{
+    border-right: 1px solid #026842;
+}
+
+/*--------------------*/
+#contenedor-servicios > #bodas{
+    flex-direction: row;
+    text-align: right;
+}
+
+#bodas figure{
+    border-left: 1px solid #026842;
+}
+
+#bodas .boton{
+    align-items: end;
+}
+/*--------------------*/
+#talleres > .text{
+    border-left: 1px solid #026842;
+}
+
+#talleres h3{
+    font-size: 30px;
+    padding-top: 1em;
+}
+
+#talleres > div ul{
+    list-style: none;
+    font-size: 25px;
+}
+
+/*--------------------*/
+#contenedor-servicios > #peinados{
+    flex-direction: row;
+    text-align: right;
+}
+
+#peinados figure{
+    border-left: 1px solid #026842;
+}
+
+#peinados .boton{
+    align-items: end;
+}
+
+/*--------------------*/
+#manicura figure{
+    border-right: 1px solid #026842;
+}
+

@@ -1,0 +1,100 @@
+#contenedor-galeria {
+    padding: 8em 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#contenedor-galeria h2 {
+    width: 100%;
+    color: #026842;
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#contenedor-galeria figure {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+    margin: .5em;
+    display: flex;
+}
+
+#contenedor-galeria figure:hover>img {
+    transform: scale(1.2);
+}
+
+#contenedor-galeria figure img {
+    object-fit: cover;
+    width: 100%;
+    transition: all 2s;
+}
+
+#contenedor-galeria figure figcaption {
+    display: none;
+
+}
+
+#contenedor-galeria .horizontal {
+    height: 250px;
+}
+
+
+/*CONTENDOR ABRE LA IMAGEN ---------------------------------------------*/
+#contenedorMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.95);
+    display: none;
+}
+
+#imgActiva {
+    width: 75vh;
+    height: auto;
+}
+
+/*CONTENEDOR INTERNO*/
+#contenedorIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorIMG img {
+    box-shadow: rgba(245, 243, 232, 0.20) 0px 5px 15px;
+}
+
+/*BOTONES*/
+#botonClose {
+    position: absolute;
+    top: 5%;
+    right: auto;
+    z-index: 200;
+    font-size: 50px;
+    color: #fff;
+}
+
+#botonBack {
+    position: absolute;
+    top: 46%;
+    right: 90%;
+    font-size: 50px;
+    color: #fff;
+}
+
+#botonNext {
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    font-size: 50px;
+    color: #fff;
+}
